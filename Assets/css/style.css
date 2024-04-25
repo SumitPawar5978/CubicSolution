@@ -1,0 +1,203 @@
+/* custom fonts class start */
+@font-face {
+  font-family: spartan-medium;
+  src: url(../fonts/League_Spartan/static/LeagueSpartan-Medium.ttf);
+}
+@font-face {
+  font-family: spartan-regular;
+  src: url(../fonts/League_Spartan/static/LeagueSpartan-Regular.ttf);
+}
+@font-face {
+  font-family: spartan-bold;
+  src: url(../fonts/League_Spartan/static/LeagueSpartan-Bold.ttf);
+}
+@font-face {
+  font-family: spartan-thin;
+  src: url(../fonts/League_Spartan/static/LeagueSpartan-Thin.ttf);
+}
+.ff-spartan-regular{
+  font-family: spartan-regular;
+}
+.ff-spartan-medium{
+  font-family: spartan-medium;
+}
+.ff-spartan-bold{
+  font-family: spartan-bold;
+}
+.ff-spartan-thin{
+  font-family: spartan-thin;
+}
+/* custom fonts class end */
+
+/* custom color class start */
+.mainViolet{
+  color: #760bff !important;
+}
+.lightViolet{
+  color: #760bff69;
+}
+/* custom color class end */
+
+
+
+/* navbar section start */
+#navs a {
+  font-size: 20px !important;
+}
+#navs .active{
+  color: #760bff !important;
+}
+/* navbar section end */
+
+/* Banner section start */
+#banner-section .item {
+  height: calc(100vh - 48px);
+  position: relative;
+}
+#banner-section .item img {
+  width: 100%;
+  height: calc(100vh - 48px);
+  object-fit: cover;
+}
+#banner-section .item .cover {
+  padding: 75px 0;
+  position: absolute;
+  width: 100%;
+  height: calc(100vh - 48px);
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+}
+#banner-section .item .cover .header-content {
+  position: relative;
+  padding: 56px;
+  overflow: hidden;
+}
+#banner-section .item .cover .header-content .line {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  border: 9px solid #fff;
+  -webkit-clip-path: polygon(0 0, 60% 0, 36% 100%, 0 100%);
+  clip-path: polygon(0 0, 60% 0, 36% 100%, 0 100%);
+}
+#banner-section .item .cover .header-content h2 {
+  font-weight: 300;
+  font-size: 35px;
+}
+#banner-section .item .cover .header-content h1 {
+  -webkit-text-stroke: 1px #fff;
+  color: transparent;
+  font-size: 60px;
+  font-weight: 600;
+  margin: 5px 0 20px;
+  word-spacing: 3px;
+
+}
+#banner-section .item .cover .header-content h4 {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 36px;
+  color: #fff;
+}
+#banner-section .owl-item.active h1 {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-name: fadeInDown;
+  animation-delay: 0.3s;
+}
+#banner-section .owl-item.active h2 {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-name: fadeInDown;
+  animation-delay: 0.3s;
+}
+#banner-section .owl-item.active h4 {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-name: fadeInUp;
+  animation-delay: 0.3s;
+}
+#banner-section .owl-item.active .line {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-name: fadeInLeft;
+  animation-delay: 0.3s;
+}
+#banner-section .owl-nav .owl-prev {
+  position: absolute;
+  left: 15px;
+  top: 43%;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+  background: rgba(0, 0, 0, 0.5) !important;
+  width: 40px;
+  cursor: pointer;
+  height: 40px;
+  position: absolute;
+  display: block;
+  z-index: 1000;
+  border-radius: 0;
+  display: none;
+}
+#banner-section .owl-nav .owl-prev span {
+  font-size: 1.6875rem;
+  color: #fff;
+}
+#banner-section .owl-nav .owl-prev:focus {
+  outline: 0;
+}
+#banner-section .owl-nav .owl-prev:hover {
+  background: #000 !important;
+}
+#banner-section .owl-nav .owl-next {
+  position: absolute;
+  right: 15px;
+  top: 43%;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+  background: rgba(0, 0, 0, 0.5) !important;
+  width: 40px;
+  cursor: pointer;
+  height: 40px;
+  position: absolute;
+  display: block;
+  z-index: 1000;
+  border-radius: 0;
+}
+#banner-section .owl-nav .owl-next span {
+  font-size: 1.6875rem;
+  color: #fff;
+}
+#banner-section .owl-nav .owl-next:focus {
+  outline: 0;
+}
+#banner-section .owl-nav .owl-next:hover {
+  background: #000 !important;
+}
+#banner-section:hover .owl-prev {
+  left: 0px;
+  opacity: 1;
+}
+#banner-section:hover .owl-next {
+  right: 0px;
+  opacity: 1;
+  display: none;
+}
+/* Banner section end */
